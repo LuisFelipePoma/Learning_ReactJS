@@ -3,8 +3,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1.5rem;
 	width: 100%;
-	max-width: 800px;
+	max-width: 1250px;
+	padding-bottom: 2rem;
+}
+
+.page header {
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 main {
@@ -17,6 +26,21 @@ form {
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	gap: 1.5rem;
+}
+
+input[name="query"] {
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+}
+
+input[type="checkbox"] {
+	/*Make the checkbox bigger  */
+	transform: scale(1.2);
+	/* IE */
+	-ms-transform: scale(1.2);
 }
 
 .movies {
@@ -28,11 +52,19 @@ form {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 	width: 100%;
-	gap: 32px;
+	gap: 60px;
 }
 
 .movie {
+	list-style-position: inside;
+	border: 1px solid black;
 	text-align: center;
+	height: 500px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .movie h3,
@@ -43,4 +75,8 @@ form {
 .movie img {
 	border-radius: 8px;
 	margin-top: 16px;
+	max-width: 250px;
+	min-width: 250px;
+	max-height: 400px;
+	min-height: 400px;
 }

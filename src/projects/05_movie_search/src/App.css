@@ -43,21 +43,29 @@ input[type="checkbox"] {
 	-ms-transform: scale(1.2);
 }
 
+button[type="submit"] {
+	padding: 5px;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+	border-color: rgb(50, 165, 50);
+	color: rgb(50, 165, 50);
+}
+
 .movies {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
 	width: 100%;
 	gap: 60px;
 }
 
 .movie {
-	list-style-position: inside;
-	border: 1px solid black;
 	text-align: center;
 	height: 500px;
 	width: 250px;
@@ -79,4 +87,5 @@ input[type="checkbox"] {
 	min-width: 250px;
 	max-height: 400px;
 	min-height: 400px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
